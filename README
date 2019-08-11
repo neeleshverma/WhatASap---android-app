@@ -1,4 +1,4 @@
-# WhatASap android app 
+## WhatASap android app 
 
 The IP/port numbers is stored as a string (in a function) in Config.dart file. Just do the change there. 
 
