@@ -1,0 +1,21 @@
+Submitted by: 160050062
+              160050058
+
+The IP/port numbers is stored as a string (in a function) in Config.dart file. Just do the change there. 
+
+To run the app, there is a need of typeahead_plugin (for autocomplete feature). For that, open pubspec.yaml file on android studio and click on "packages get". The plugin will get installed. Now just run the app on main.dart file. 
+
+First of all, a form will open which will ask for username and password. If anyone of this is wrong, a snackbar is shown displaying "Authentication failed". Similarly empty username or password will also show messages on the form
+
+On successful login, the user is taken to chats screen, where all the chats of that user are shown. On the title bar, there are search, home, create conversation, and logout buttons. 
+
+Create conversation will create conversation with the typed user (autocomplete feature), only if that is valid (conversation can be created), e.g. conversation will not be created if p1 tries to create with p1. If a conversation is already created then simply the user is taken to the chatt detail screen with that user. 
+
+Chat detail screen shows all the chats of the logged in user with a particular user. If logged in user has send the text, then it is indicated as "Sent at some time". If he has got some message then it is indicated as "Received at some time".
+
+Logout icon simply logouts the user.
+Home icon takes the user to chat screen.
+
+Features we couldn't implement : On back pressing in android phones, it is getting logged out. We tried many things like "WillPopScope", but we couldn't fix it.
+
+Note: We have made little changes in AllConversations.java file because we have to use names, instead of uids. So we have also fetched the names with the result of AllConversations.java. So we are also submitting our AllConversations.java file.
